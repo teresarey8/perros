@@ -46,14 +46,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <table>
         <tr>
             <th>ID</th>
-            <th>Matrícula</th>
+            <th>Nombre</th>
             <th>peso</th>
             <th>Color</th>
             <th>sexo</th>
             <th>Acciones</th>
         </tr>
         <?php
-        $query = "SELECT * FROM coches";
+        $query = "SELECT * FROM perros";
         $result = $conn->query($query);
         while ($row = $result->fetch_assoc()) {
             echo "<tr>
